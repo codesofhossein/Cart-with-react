@@ -1,0 +1,171 @@
+.container {
+
+
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 25;
+    margin-bottom: 2rem;
+}
+
+.navContainer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1600px;
+    margin: 0 auto;
+
+    transition: all 0.2s;
+
+    .leftNav {
+
+        display: flex;
+        align-items: center;
+
+        .product {
+
+            text-decoration: none;
+            margin-right: 1.5rem;
+            color : #ffd900;
+            background-color: #000;
+            border-radius: 6px;
+            padding: 5px 15px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            transition: all 0.2s;
+
+            &:hover {
+
+                background-color: rgb(48, 48, 48);
+            }
+        }
+
+        img {
+
+
+            width: 40px;
+
+        }
+
+        p {
+
+            margin-left: 2rem;
+            border: solid silver 1px;
+            padding: 5px 15px;
+            color: silver;
+            border-radius: 4px;
+        }
+    }
+
+    .leftNav div {
+
+        position: relative;
+
+
+        .counter {
+
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            background-color: rgb(54, 28, 105);
+            position: absolute;
+            right: -10px;
+            border-radius: 50%;
+            user-select: none;
+
+            span {
+
+                color: #fff;
+                text-align: center;
+                display: block;
+                font-size: 0.9rem;
+                font-weight: bold;
+                line-height: 20px;
+
+            }
+
+
+        }
+
+    }
+
+
+
+    .mainLogo {
+
+        width: 65px;
+
+    }
+
+
+}
+
+@media(max-width : 1700px) {
+
+    .navContainer {
+
+        width: 1400px;
+    }
+}
+
+@media(max-width : 1450px) {
+
+    .navContainer {
+
+        width: 1200px;
+    }
+}
+
+@media(max-width : 1200px) {
+
+    .navContainer {
+
+        width: 890px;
+    }
+}
+
+@media(max-width : 900px) {
+
+    .navContainer {
+
+        width: 100%;
+        padding: 0 1.2rem;
+
+
+        .mainLogo {
+
+            width: 50px;
+        }
+
+
+        .leftNav {
+
+            .product {
+
+                margin-right: 1rem;
+                font-size: 0.9rem;
+            }
+
+            
+
+            img {
+
+
+                width: 35px;
+                
+
+            }
+
+            p {
+
+               display: none;
+            }
+        }
+    }
+
+
+}

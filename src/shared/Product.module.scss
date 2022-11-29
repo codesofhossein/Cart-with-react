@@ -1,0 +1,106 @@
+.cardContainer {
+
+    margin: 2.5rem 0;
+    background-color: #ececec;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    // box-shadow: 5px 5px 10px  rgba(189, 189, 189, 0.623);
+    user-select: none;
+    transition: all 0.2s;
+
+    &:hover {
+
+        box-shadow: 5px 5px 10px rgb(189, 189, 189);
+    }
+
+    img {
+
+        width: 100%;
+        height: 300px;
+    }
+
+    h3 {
+
+        margin: 30px 20px 20px;
+    }
+
+    .price {
+
+        margin: 0px 25px 20px;
+        background-color: rgb(10, 145, 46);
+        width: fit-content;
+        padding: 0 5px;
+        text-align: center;
+        height: 25px;
+        line-height: 25px;
+        display: inline-block;
+        border-radius: 5px;
+        color: #fff;
+
+    }
+
+
+    .infoContainer{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        margin : 2rem 0 ;
+        height: 30px;
+
+
+
+        .detail{
+
+            text-decoration: none;
+            color : rgb(112, 13, 159) ;
+            font-weight: bold;
+        }
+
+       
+        .buttons button{
+
+            cursor: pointer;
+            background-color: #ffd900;
+            color : #333333;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 1rem;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            transition: all 0.2s;
+            
+
+            &:hover {
+
+                background-color: #ffee00 ;
+            }
+
+        }
+
+
+        .quantityShow{
+
+            margin: 0 8px ;
+            background-color: #fff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            
+        }
+
+    }
+}
+
+@media(max-width : 768px) {
+
+    .cardContainer {
+
+        
+        .price {
+    
+            font-size: 0.9rem;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.cartItems {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 1px solid #c0c0c0aa;
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+
+
+
+    .mainPic {
+
+        width: 170px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+
+
+    .data {
+
+
+        span:nth-child(1) {
+
+            display: block;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #1663e0;
+            padding: 10px 0;
+        }
+
+        span:nth-child(2) {
+
+            display: block;
+            // padding: 10px 0;
+            color: #18b318;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+
+    }
+
+    .quantity {
+
+        font-weight: bold;
+        color: #fff;
+        background-color: orange;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+
+
+    .buttons {
+
+        width: 100px;
+    }
+
+
+    .buttons button {
+
+        cursor: pointer;
+        background-color: #ffd900;
+        color: #333333;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        transition: all 0.2s;
+
+
+        &:hover {
+
+            background-color: #ffee00;
+        }
+
+    }
+
+
+    .buttons .plusBtn {
+
+        margin-left: 5px;
+    }
+}
+
+@media(max-width : 900px) {
+
+    .cartItems{
+
+        flex-direction: column;
+        
+
+        .mainPic {
+
+            width: 60%;
+            display: block;
+            margin : 1.5rem auto ;
+            height: auto;
+        }
+
+        .data {
+
+            margin: 0 0 2rem ;
+            
+            span:nth-child(2) {
+    
+                text-align: center;
+                
+            }
+
+            span:nth-child(1) {
+    
+                font-size: 1.1rem;
+                
+            }
+    
+    
+        }
+
+        .quantity {
+
+            margin : 0 0 2rem ;
+        }
+
+        .buttons {
+
+            width: inherit;
+            margin-bottom: 1rem;
+        }
+
+        
+    }
+
+}

@@ -1,0 +1,341 @@
+.DetailContainer {
+
+    width: 1400px;
+    margin: 140px auto;
+    background-color: #fff;
+
+    padding: 3rem;
+    // border : silver solid 1px ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 1rem;
+    transition: all 0.2s;
+
+
+    .title {
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #e8e8e893;
+        padding: 10px 20px;
+        border-radius: 1rem;
+
+        h1 {
+
+            transition: all 0.2s;
+        }
+
+        span {
+
+            background-color: #ffd900;
+            color: #333333;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: #666666dc;
+
+        }
+
+    }
+
+
+    .info {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+
+    .info .mainPic {
+
+        width: 640px;
+        height: 480px;
+        border-radius: 0.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+
+    .info .description {
+
+        margin-left: 3rem;
+        position: relative;
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items:flex-end;
+
+
+        .topDes .des {
+
+            border: silver 1px solid;
+            padding: 1.5rem 1rem;
+
+        }
+
+        .topDes .des .labelDes {
+
+            font-size: 1.1rem;
+            color: #666666dc;
+            position: absolute;
+            left: 20px;
+            top: -12px;
+            background-color: #fff;
+            padding: 0 0.5rem;
+        }
+
+        .topDes .des p {
+
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+
+        .topDes .price {
+
+            margin: 2rem 0;
+            display: flex;
+            justify-content: space-between;
+
+
+            span {
+
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+
+            span:nth-child(2) {
+
+                background-color: green;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 8px;
+            }
+
+
+        }
+
+
+        .bottomDes div {
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+
+            .backBtn {
+
+                background-color: #ffd900;
+                color: #333333;
+                text-decoration: none;
+                cursor: pointer;
+                padding: 10px 2rem;
+                font-size: 1.3rem;
+                border-radius: 8px;
+                font-weight: bold;
+                box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+                transition: all 0.3s;
+                border: none;
+
+
+                &:hover {
+
+                    background-color: #ffe44b;
+                }
+            }
+
+            .showQuantity {
+
+                margin-right: 8px;
+                background-color: #000000;
+                color: #ffd900;
+                padding: 5px 8px;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+        }
+
+
+
+    }
+
+}
+
+@media(max-width : 1700px) {
+
+    .DetailContainer {
+
+        width: 1400px;
+    }
+}
+
+@media(max-width : 1450px) {
+
+    .DetailContainer {
+
+        width: 1200px;
+    }
+}
+
+@media(max-width : 1200px) {
+
+    .DetailContainer {
+
+        width: 890px;
+
+
+
+        .info {
+
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2.2rem;
+        }
+
+        .info .mainPic {
+
+            width: 100%;
+            height: auto;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .info .description {
+
+            margin-left: 0rem;
+            width: 100%;
+            margin-top: 2.5rem;
+
+
+        }
+
+        .bottomDes div {
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 5rem;
+
+            .backBtn {
+
+                width: 100%;
+            }
+
+            .showQuantity {
+
+                display: block;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+        }
+
+    }
+}
+
+@media(max-width : 900px) {
+
+    .DetailContainer {
+
+        width: calc(100% - 2rem);
+        margin: 110px 1rem;
+        padding: 1.5rem;
+
+
+        .title {
+
+            h1 {
+
+                font-size: 1.5rem;
+            }
+        }
+
+        .info .description {
+
+
+            .topDes .des .labelDes {
+
+                font-size: 0.9rem;
+            }
+
+            .topDes .des p {
+
+                font-size: 0.9rem;
+                
+            }
+
+            .topDes .price {
+
+                span {
+
+                    font-size: 1.2rem;
+                    
+                }
+
+            }
+
+
+        }
+
+    }
+
+    @media(max-width : 720px) {
+
+
+        .DetailContainer {
+
+
+            .title {
+
+                h1 {
+
+                    font-size: 1rem;
+                }
+
+                span {
+
+
+                    font-size: 0.5rem;
+
+                }
+            }
+
+        }
+
+
+       
+
+
+    }
+
+    @media(max-width : 500px) {
+
+
+        .DetailContainer {
+
+
+            .title {
+
+                h1 {
+
+                    font-size: 0.8rem;
+                }
+
+                span {
+
+
+                    font-size: 0.4rem;
+
+                }
+            }
+
+        }
+
+
+       
+
+
+    }
+
+}
